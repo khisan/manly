@@ -5,7 +5,7 @@
         <h4 class="page-title">List Produk</h4>
         <ul class="breadcrumbs">
           <li class="nav-home">
-            <a href="<?php echo base_url().'Backend/dashboard'?>">
+            <a href="<?php echo base_url() . 'Backend/dashboard' ?>">
               <i class="flaticon-home"></i>
             </a>
           </li>
@@ -13,7 +13,7 @@
             <i class="flaticon-right-arrow"></i>
           </li>
           <li class="nav-item">
-            <a href="<?php echo base_url().'Backend/dashboard'?>">Dashboard</a>
+            <a href="<?php echo base_url() . 'Backend/dashboard' ?>">Dashboard</a>
           </li>
           <li class="separator">
             <i class="flaticon-right-arrow"></i>
@@ -28,7 +28,7 @@
           <div class="card">
             <div class="card-body">
               <!--DELETE RECORD MODAL-->
-              <form action="<?php echo site_url('Backend/Produk/delete');?>" method="post">
+              <form action="<?php echo site_url('Backend/Produk/delete'); ?>" method="post">
                 <div class="modal fade" id="DeleteModal" tabindex="-1" role="dialog" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -48,7 +48,7 @@
                       </div>
                       <div class="modal-footer no-bd">
                         <input type="hidden" name="id">
-                        <button type="submit"class="btn btn-primary">Hapus</button>
+                        <button type="submit" class="btn btn-primary">Hapus</button>
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Batal</button>
                       </div>
                     </div>
@@ -79,33 +79,33 @@
                     </tr>
                   </tfoot>
                   <tbody>
-                  <?php 
-                    $no=0;
-                    foreach ($data->result() as $row):
-                    $no++;
-                  ?>
-                    <tr>
-                      <td><?php echo $no; ?></td>
-                      <td><?php echo $row->nama_produk; ?></td>
-                      <td>
-                        <?php $angka = $row->harga_produk; 
-                         echo 'Rp. '. number_format($angka, 0, '', '.');
-                        ?>
-                      </td>
-                      <td><?php echo $row->stok_produk; ?></td>
-                      <td><img width="150px" height="150px" src="<?php echo base_url().'assets/images/produk/'.$row->foto_produk;?>" alt=""></td>
-                      <td>
-                        <div class="form-button-action">
-                          <a href="<?php echo site_url('Backend/produk/get_edit/'.$row->id_produk);?>" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg btn-edit">
-                            <i class="fa fa-edit"></i>
-                          </a>
-                          <a href="javascript:void(0);" data-toggle="tooltip" title="" class="btn btn-link btn-danger btn-delete" data-original-title="Remove" data-id="<?php echo $row->id_produk; ?>">
-                            <i class="fa fa-times"></i>
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-                  <?php endforeach; ?>
+                    <?php
+                    $no = 0;
+                    foreach ($data->result() as $row) :
+                      $no++;
+                    ?>
+                      <tr>
+                        <td><?php echo $no; ?></td>
+                        <td><?php echo $row->nama_produk; ?></td>
+                        <td>
+                          <?php $angka = $row->harga_produk;
+                          echo 'Rp. ' . number_format($angka, 0, '', '.');
+                          ?>
+                        </td>
+                        <td><?php echo $row->stok_produk; ?></td>
+                        <td><img width="150px" height="150px" src="<?php echo base_url() . 'assets/images/produk/' . $row->foto_produk; ?>" alt=""></td>
+                        <td>
+                          <div class="form-button-action">
+                            <a href="<?php echo site_url('Backend/produk/get_edit/' . $row->id_produk); ?>" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg btn-edit">
+                              <i class="fa fa-edit"></i>
+                            </a>
+                            <a href="javascript:void(0);" data-toggle="tooltip" title="" class="btn btn-link btn-danger btn-delete" data-original-title="Remove" data-id="<?php echo $row->id_produk; ?>">
+                              <i class="fa fa-times"></i>
+                            </a>
+                          </div>
+                        </td>
+                      </tr>
+                    <?php endforeach; ?>
                   </tbody>
                 </table>
               </div>
@@ -115,36 +115,36 @@
       </div>
     </div>
   </div>
-<script src="<?php echo base_url('assets/back/js/core/jquery.3.2.1.min.js')?>"></script>
-<!-- Datatables -->
-<script src="<?php echo base_url('assets/back/js/plugin/datatables/datatables.min.js')?>"></script>
-<script>
-  $(document).ready(function(){
-    $('#add-row').dataTable();
+  <script src="<?php echo base_url('assets/back/js/core/jquery.3.2.1.min.js') ?>"></script>
+  <!-- Datatables -->
+  <script src="<?php echo base_url('assets/back/js/plugin/datatables/datatables.min.js') ?>"></script>
+  <script>
+    $(document).ready(function() {
+      $('#add-row').dataTable();
 
-    //Delete Record
-    $('.btn-delete').on('click',function(){
-        var id=$(this).data('id');
+      //Delete Record
+      $('.btn-delete').on('click', function() {
+        var id = $(this).data('id');
         $('[name="id"]').val(id);
         $('#DeleteModal').modal('show');
+      });
+
     });
+    // // Add Row
+    //     $('#add-row').DataTable({
+    //       "pageLength": 5,
+    //     });
 
-  });
-  // // Add Row
-  //     $('#add-row').DataTable({
-  //       "pageLength": 5,
-  //     });
+    //     var action = '<td> <div class="form-button-action"> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task"> <i class="fa fa-edit"></i> </button> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove"> <i class="fa fa-times"></i> </button> </div> </td>';
 
-  //     var action = '<td> <div class="form-button-action"> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task"> <i class="fa fa-edit"></i> </button> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove"> <i class="fa fa-times"></i> </button> </div> </td>';
+    //     $('#addRowButton').click(function() {
+    //       $('#add-row').dataTable().fnAddData([
+    //         $("#addName").val(),
+    //         $("#addPosition").val(),
+    //         $("#addOffice").val(),
+    //         action
+    //         ]);
+    //       $('#addRowModal').modal('hide');
 
-  //     $('#addRowButton').click(function() {
-  //       $('#add-row').dataTable().fnAddData([
-  //         $("#addName").val(),
-  //         $("#addPosition").val(),
-  //         $("#addOffice").val(),
-  //         action
-  //         ]);
-  //       $('#addRowModal').modal('hide');
-
-  //     });
-</script>
+    //     });
+  </script>

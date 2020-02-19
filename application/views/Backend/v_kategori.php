@@ -5,7 +5,7 @@
         <h4 class="page-title">Kategori</h4>
         <ul class="breadcrumbs">
           <li class="nav-home">
-            <a href="<?php echo base_url().'Backend/dashboard'?>">
+            <a href="<?php echo base_url() . 'Backend/dashboard' ?>">
               <i class="flaticon-home"></i>
             </a>
           </li>
@@ -13,7 +13,7 @@
             <i class="flaticon-right-arrow"></i>
           </li>
           <li class="nav-item">
-            <a href="<?php echo base_url().'Backend/dashboard'?>">Dashboard</a>
+            <a href="<?php echo base_url() . 'Backend/dashboard' ?>">Dashboard</a>
           </li>
           <li class="separator">
             <i class="flaticon-right-arrow"></i>
@@ -37,7 +37,7 @@
             </div>
             <div class="card-body">
               <!--ADD RECORD MODAL-->
-              <form action="<?php echo site_url('Backend/Kategori/save');?>" method="post">
+              <form action="<?php echo site_url('Backend/Kategori/save'); ?>" method="post">
                 <div class="modal fade" id="addRowModal" tabindex="-1" role="dialog" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -71,7 +71,7 @@
               </form>
 
               <!--EDIT RECORD MODAL-->
-              <form action="<?php echo site_url('Backend/Kategori/edit');?>" method="post">
+              <form action="<?php echo site_url('Backend/Kategori/edit'); ?>" method="post">
                 <div class="modal fade" id="EditModal" tabindex="-1" role="dialog" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -106,7 +106,7 @@
               </form>
 
               <!--DELETE RECORD MODAL-->
-              <form action="<?php echo site_url('Backend/Kategori/delete');?>" method="post">
+              <form action="<?php echo site_url('Backend/Kategori/delete'); ?>" method="post">
                 <div class="modal fade" id="DeleteModal" tabindex="-1" role="dialog" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -126,7 +126,7 @@
                       </div>
                       <div class="modal-footer no-bd">
                         <input type="hidden" name="id">
-                        <button type="submit"class="btn btn-primary">Hapus</button>
+                        <button type="submit" class="btn btn-primary">Hapus</button>
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Batal</button>
                       </div>
                     </div>
@@ -153,27 +153,27 @@
                     </tr>
                   </tfoot>
                   <tbody>
-                  <?php 
-                    $no=0;
-                    foreach ($data->result() as $row):
-                    $no++;
-                  ?>
-                    <tr>
-                      <td><?php echo $no; ?></td>
-                      <td><?php echo $row->nama_kategori ?></td>
-                      <td><?php echo $row->slug_kategori ?></td>
-                      <td>
-                        <div class="form-button-action">
-                          <a href="javascript:void(0);" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg btn-edit" data-original-title="Edit Task" data-id="<?php echo $row->id_kategori; ?>" data-kategori="<?php echo $row->nama_kategori;?>">
-                            <i class="fa fa-edit"></i>
-                          </a>
-                          <a href="javascript:void(0);" data-toggle="tooltip" title="" class="btn btn-link btn-danger btn-delete" data-original-title="Remove"  data-id="<?php echo $row->id_kategori; ?>">
-                            <i class="fa fa-times"></i>
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-                  <?php endforeach; ?>
+                    <?php
+                    $no = 0;
+                    foreach ($data->result() as $row) :
+                      $no++;
+                    ?>
+                      <tr>
+                        <td><?php echo $no; ?></td>
+                        <td><?php echo $row->nama_kategori ?></td>
+                        <td><?php echo $row->slug_kategori ?></td>
+                        <td>
+                          <div class="form-button-action">
+                            <a href="javascript:void(0);" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg btn-edit" data-original-title="Edit Task" data-id="<?php echo $row->id_kategori; ?>" data-kategori="<?php echo $row->nama_kategori; ?>">
+                              <i class="fa fa-edit"></i>
+                            </a>
+                            <a href="javascript:void(0);" data-toggle="tooltip" title="" class="btn btn-link btn-danger btn-delete" data-original-title="Remove" data-id="<?php echo $row->id_kategori; ?>">
+                              <i class="fa fa-times"></i>
+                            </a>
+                          </div>
+                        </td>
+                      </tr>
+                    <?php endforeach; ?>
                   </tbody>
                 </table>
               </div>
@@ -183,28 +183,28 @@
       </div>
     </div>
   </div>
-<script src="<?php echo base_url('assets/back/js/core/jquery.3.2.1.min.js')?>"></script>
-<!-- Datatables -->
-<script src="<?php echo base_url('assets/back/js/plugin/datatables/datatables.min.js')?>"></script>
-<script>
-  $(document).ready(function(){
-    $('#add-row').dataTable();
+  <script src="<?php echo base_url('assets/back/js/core/jquery.3.2.1.min.js') ?>"></script>
+  <!-- Datatables -->
+  <script src="<?php echo base_url('assets/back/js/plugin/datatables/datatables.min.js') ?>"></script>
+  <script>
+    $(document).ready(function() {
+      $('#add-row').dataTable();
 
-    //Edit Record
-    $('.btn-edit').on('click',function(){
-        var id=$(this).data('id');
-        var name=$(this).data('kategori');
+      //Edit Record
+      $('.btn-edit').on('click', function() {
+        var id = $(this).data('id');
+        var name = $(this).data('kategori');
         $('[name="kode"]').val(id);
         $('[name="nama_kategori2"]').val(name);
         $('#EditModal').modal('show');
-    });
+      });
 
-    //Delete Record
-    $('.btn-delete').on('click',function(){
-        var id=$(this).data('id');
+      //Delete Record
+      $('.btn-delete').on('click', function() {
+        var id = $(this).data('id');
         $('[name="id"]').val(id);
         $('#DeleteModal').modal('show');
-    });
+      });
 
-  });
-</script>
+    });
+  </script>
