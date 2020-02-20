@@ -43,9 +43,7 @@
 			<!-- Topbar -->
 			<div class="top-bar">
 				<div class="content-topbar flex-sb-m h-full container">
-					<div class="left-top-bar">
-						Gratis ongkir di atas pembelian Rp. 1000.000
-					</div>
+					<div class="left-top-bar"></div>
 				</div>
 			</div>
 

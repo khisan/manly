@@ -68,6 +68,10 @@ class Shop extends CI_Controller {
     $data['logo_header'] = $home->logo_header;
     $data['data'] = $this->M_produk->get_produk_list($config["per_page"], $data['page']);          
     $data['pagination'] = $this->pagination->create_links();
+    $kontak = $this->db->get('tb_kontak',1)->row();
+    $data['alamat'] = $kontak->alamat;
+    $data['no_hp'] = $kontak->no_hp;
+    $data['email'] = $kontak->email;
   	$this->load->view('Frontend/produk.php',$data);
   	$this->load->view('Frontend/templates/footer.php');
 	}

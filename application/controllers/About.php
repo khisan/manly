@@ -21,6 +21,10 @@ class About extends CI_Controller {
 		$data['judul_deskripsi_2'] = $tentang->judul_deskripsi_2;
 		$data['isi_deskripsi_2'] = $tentang->isi_deskripsi_2;
 		$data['gambar_deskripsi_2'] = $tentang->gambar_deskripsi_2;
+		$kontak = $this->db->get('tb_kontak',1)->row();
+		$data['alamat'] = $kontak->alamat;
+    $data['no_hp'] = $kontak->no_hp;
+    $data['email'] = $kontak->email;
 		$this->load->view('Frontend/about.php',$data);
 		$this->load->view('Frontend/templates/footer.php');
 	}

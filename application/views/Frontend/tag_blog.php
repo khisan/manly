@@ -39,18 +39,9 @@
 
 <body class="animsition">
   <!-- Header -->
-  <header class="header-v4">
+  <header class="header-v2">
     <!-- Header desktop -->
     <div class="container-menu-desktop">
-      <!-- Topbar -->
-      <div class="top-bar">
-        <div class="content-topbar flex-sb-m h-full container">
-          <div class="left-top-bar">
-            Gratis ongkir di atas pembelian Rp. 1000.000
-          </div>
-        </div>
-      </div>
-
       <div class="wrap-menu-desktop how-shadow1">
         <nav class="limiter-menu-desktop container">
 

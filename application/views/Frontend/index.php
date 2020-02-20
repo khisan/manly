@@ -43,20 +43,13 @@
     <!-- Header desktop -->
     <div class="container-menu-desktop">
       <!-- Topbar -->
-      <div class="top-bar">
-        <div class="content-topbar flex-sb-m h-full container">
-          <div class="left-top-bar">
-            Free shipping for standard order over $100
-          </div>
-        </div>
-      </div>
 
       <div class="wrap-menu-desktop">
         <nav class="limiter-menu-desktop container">
 
           <!-- Logo desktop -->
           <a href="<?php echo base_url('home')?>" class="logo">
-            <img src="<?php echo base_url().'/assets/images/theme/'.$logo_header;?>" alt="IMG-LOGO">
+            <img src="<?php echo base_url().'/assets/images/theme/'.$logo_header;?>" alt="IMG-LOGO" width="200px">
           </a>
 
           <!-- Menu desktop -->
@@ -120,14 +113,6 @@
 
     <!-- Menu Mobile -->
     <div class="menu-mobile">
-      <ul class="topbar-mobile">
-        <li>
-          <div class="left-top-bar">
-            Free shipping for standard order over $100
-          </div>
-        </li>
-      </ul>
-
       <ul class="main-menu-m">
         <li>
           <a href="<?php echo base_url('home')?>">Home</a>

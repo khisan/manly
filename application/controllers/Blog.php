@@ -96,6 +96,10 @@ class Blog extends CI_Controller {
     $home = $this->db->get('tb_home',1)->row();
     $data['favicon'] = $home->favicon;
     $data['logo_header'] = $home->logo_header;
+    $kontak = $this->db->get('tb_kontak',1)->row();
+    $data['alamat'] = $kontak->alamat;
+    $data['no_hp'] = $kontak->no_hp;
+    $data['email'] = $kontak->email;
   	$this->load->view('Frontend/blog.php',$data);
   	$this->load->view('Frontend/templates/footer.php');
 	}
