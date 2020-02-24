@@ -25,7 +25,7 @@
 						Alamat? <?php echo $alamat; ?> atau hubungi kami di <?php echo $no_hp; ?>
 					</p>
 
-					<div class="p-t-27 justify-content-center">
+					<div class="p-t-27" style="text-align: center;">
 						<a href="https://api.whatsapp.com/send?phone=<?php echo $no_hp ?>" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
 							<i class="fa fa-whatsapp"></i>
 						</a>

@@ -35,7 +35,7 @@
                       <div class="col-md-9 p-0">
                         <input type="file" class="form-control" name="favicon">
                         <small class="form-text text-muted">Favicon harus beresolusi 32 x 32 Pixels.</small>
-                        <img src="<?php echo base_url().'assets/images/theme/'.$favicon;?>" class="thumbnail">
+                        <img src="<?php echo base_url().'assets/images/theme/'.$favicon;?>" class="thumbnail" width="32px" height="32px">
                       </div>
                     </div>
                   </div>
@@ -45,7 +45,7 @@
                       <div class="col-md-9 p-0">
                         <input type="file" class="form-control" name="logo_header">
                         <small class="form-text text-muted">Logo harus beresolusi 248 x 54 Pixels.</small>
-                        <img src="<?php echo base_url().'assets/images/theme/'.$logo_header;?>" class="thumbnail">
+                        <img src="<?php echo base_url().'assets/images/theme/'.$logo_header;?>" class="thumbnail" width="248px" height="54px">
                       </div>
                     </div>
                   </div>
