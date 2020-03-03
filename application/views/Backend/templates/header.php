@@ -28,7 +28,7 @@
 
 	<!-- CSS Files -->
 	<link rel="stylesheet" href="<?php echo base_url('assets/back/css/bootstrap.min.css')?>">
-	<link rel="stylesheet" href="<?php echo base_url('assets/back/css/atlantis.min.css')?>">
+	<link rel="stylesheet" href="<?php echo base_url('assets/back/css/atlantis.css')?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/back/summernote/dist/summernote-bs4.css')?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/back/dropify/css/dropify.min.css')?>">
 
@@ -40,7 +40,7 @@
 	<div class="wrapper">
 		<div class="main-header">
 			<!-- Logo Header -->
-			<div class="logo-header" data-background-color="blue">
+			<div class="logo-header" data-background-color="dark">
 
 				<a href="index.html" class="logo">
 					<img src="<?php echo base_url('assets/back/img/logo1.png')?>" alt="navbar brand" class="navbar-brand" width="130px">
@@ -61,7 +61,7 @@
 			<!-- End Logo Header -->
 
 			<!-- Navbar Header -->
-			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue2">
+			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="dark">
 				<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
 						<li class="nav-item dropdown hidden-caret">
 							<a class="nav-link" href="<?php echo base_url().'Login/logout'?>" aria-expanded="false">

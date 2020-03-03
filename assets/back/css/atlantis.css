@@ -654,7 +654,7 @@ body {
   .sidebar.sidebar-style-2 .nav .nav-item a[data-toggle=collapse][aria-expanded=true]:before {
     background: transparent !important; }
 .sidebar.sidebar-style-2 .nav.nav-primary > .nav-item.active > a {
-  background: #1572E8 !important;
+  background: #21293F !important;
   box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1), 4px 4px 15px -5px rgba(21, 114, 232, 0.4) !important; }
   .sidebar.sidebar-style-2 .nav.nav-primary > .nav-item.active > a:before {
     background: transparent !important; }
@@ -1370,7 +1370,7 @@ body {
   background: #1f283e !important; }
 
 .navbar-header[data-background-color="dark"] {
-  background: #1a2035 !important; }
+  background: #1A2134 !important; }
 
 .navbar-header[data-background-color="dark2"] {
   background: #1f283e !important; }
