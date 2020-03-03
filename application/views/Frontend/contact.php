@@ -47,7 +47,7 @@
 
           <!-- Logo desktop -->
           <a href="<?php echo base_url('home')?>" class="logo">
-            <img src="<?php echo base_url().'/assets/images/theme/'.$logo_header;?>" alt="IMG-LOGO">
+            <img src="<?php echo base_url().'/assets/images/theme/'.$logo_header;?>" alt="IMG-LOGO" width="200px">
           </a>
 
           <!-- Menu desktop -->
@@ -165,7 +165,7 @@
 
             <div class="size-212 p-t-2">
               <span class="mtext-110 cl2">
-                Alamat
+                Address
               </span>
 
               <p class="stext-115 cl6 size-300 p-t-18">
@@ -181,7 +181,7 @@
 
             <div class="size-212 p-t-2">
               <span class="mtext-110 cl2">
-                No HP
+                Phone Number
               </span>
 
               <p class="stext-115 cl6 size-300 p-t-18">

@@ -19,6 +19,10 @@ class Blog extends CI_Controller {
     $home = $this->db->get('tb_home',1)->row();
     $x['favicon'] = $home->favicon;
     $x['logo_header'] = $home->logo_header;
+    $kontak = $this->db->get('tb_kontak',1)->row();
+    $x['alamat'] = $kontak->alamat;
+    $x['no_hp'] = $kontak->no_hp;
+    $x['email'] = $kontak->email;
 		$this->load->view('Frontend/cari_blog',$x);
 		$this->load->view('Frontend/templates/footer.php');
 	}
@@ -30,6 +34,10 @@ class Blog extends CI_Controller {
     $home = $this->db->get('tb_home',1)->row();
     $x['favicon'] = $home->favicon;
     $x['logo_header'] = $home->logo_header;
+    $kontak = $this->db->get('tb_kontak',1)->row();
+    $x['alamat'] = $kontak->alamat;
+    $x['no_hp'] = $kontak->no_hp;
+    $x['email'] = $kontak->email;
 		$this->load->view('Frontend/detail_blog',$x);
 		$this->load->view('Frontend/templates/footer');
 	}

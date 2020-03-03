@@ -45,7 +45,7 @@
           
           <!-- Logo desktop -->   
           <a href="<?php echo base_url('home')?>" class="logo">
-            <img src="<?php echo base_url().'/assets/images/theme/'.$logo_header;?>" alt="IMG-LOGO">
+            <img src="<?php echo base_url().'/assets/images/theme/'.$logo_header;?>" alt="IMG-LOGO" width="200px">
           </a>
 
           <!-- Menu desktop -->

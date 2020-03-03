@@ -46,7 +46,7 @@
         <nav class="limiter-menu-desktop container">
           <!-- Logo desktop -->
           <a href="<?php echo base_url('home')?>" class="logo">
-            <img src="<?php echo base_url().'/assets/images/theme/'.$logo_header;?>" alt="IMG-LOGO">
+            <img src="<?php echo base_url().'/assets/images/theme/'.$logo_header;?>" alt="IMG-LOGO" width="200px">
           </a>
 
           <!-- Menu desktop -->
@@ -208,7 +208,7 @@
                     </span>
 
                     <span>
-                      Kategori : <?php echo $row->nama_kategori;?>
+                      Category : <?php echo $row->nama_kategori;?>
                       <span class="cl12 m-l-4 m-r-6">|</span>
                     </span>
                     <span>
@@ -218,7 +218,7 @@
                   </span>
 
                   <a href="<?php echo site_url('Blog/detail/'.$row->id_post);?>" class="stext-101 cl2 hov-cl1 trans-04 m-tb-10">
-                    Detail Postingan
+                    Continue Reading
                     <i class="fa fa-long-arrow-right m-l-9"></i>
                   </a>
                 </div>
@@ -247,7 +247,7 @@
 
             <div class="p-t-55">
               <h4 class="mtext-112 cl2 p-b-33">
-                Kategori
+                Categories
               </h4>
               <?php foreach ($kategori->result() as $row):?> 
               <ul>

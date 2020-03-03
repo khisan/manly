@@ -48,7 +48,7 @@
 
           <!-- Logo desktop -->
           <a href="<?php echo base_url('home')?>" class="logo">
-            <img src="<?php echo base_url().'/assets/images/theme/'.$logo_header;?>" alt="IMG-LOGO">
+            <img src="<?php echo base_url().'/assets/images/theme/'.$logo_header;?>" alt="IMG-LOGO" width="200px">
           </a>
 
           <!-- Menu desktop -->
@@ -206,7 +206,7 @@
               <div class="flex-w p-b-10">
                 <div class="respon6" style="margin-right: 10px">
                  <span class="mtext-106 cl2"> 
-                    Stok :
+                    Stock :
                  </span>
                 </div>
 
@@ -227,7 +227,7 @@
           <!-- Nav tabs -->
           <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item p-b-10">
-              <a class="nav-link active" data-toggle="tab" href="#description" role="tab">Deskripsi Produk</a>
+              <a class="nav-link active" data-toggle="tab" href="#description" role="tab">Product Description</a>
             </li>
           </ul>
 

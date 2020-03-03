@@ -16,6 +16,10 @@ class Shop extends CI_Controller {
 		$keyword = $this->input->post('keyword');
 		$data['products']=$this->M_produk->search_product($keyword);
     $data['kategori'] = $this->M_kategori->get_all_category();
+    $kontak = $this->db->get('tb_kontak',1)->row();
+    $data['alamat'] = $kontak->alamat;
+    $data['no_hp'] = $kontak->no_hp;
+    $data['email'] = $kontak->email;
 		$this->load->view('Frontend/cari_produk',$data);
 		$this->load->view('Frontend/templates/footer.php');
 	}
@@ -25,6 +29,10 @@ class Shop extends CI_Controller {
     $x['favicon'] = $home->favicon;
     $x['logo_header'] = $home->logo_header;
 		$x['data'] = $this->M_produk->get_produk_by_id($id_produk);
+    $kontak = $this->db->get('tb_kontak',1)->row();
+    $x['alamat'] = $kontak->alamat;
+    $x['no_hp'] = $kontak->no_hp;
+    $x['email'] = $kontak->email;
 		$this->load->view('Frontend/detail_produk',$x);
 		$this->load->view('Frontend/templates/footer');
 	}
