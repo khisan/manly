@@ -73,8 +73,9 @@ class Produk extends CI_Controller{
 
     if(!empty($_FILES['foto_produk']['name'])){
       if ($this->upload->do_upload('foto_produk')){
+      	$id = $this->input->post('id_produk',TRUE);
       	$data_gambar = $this->M_produk->get_all_produk()->row_array();
-    		$foto = $this->M_produk->get_produk_by_id($data_gambar['id_produk'])->row();
+    		$foto = $this->M_produk->get_produk_by_id($id)->row();
     		if ($foto->foto_produk != null) {
     			$target_file = './assets/images/produk/'.$foto->foto_produk;
     			unlink($target_file);
@@ -90,7 +91,6 @@ class Produk extends CI_Controller{
         $this->image_lib->resize();
 
 	      $gambar=$img['file_name'];
-      	$id = $this->input->post('id_produk',TRUE);
 				$nama_produk = strip_tags(htmlspecialchars($this->input->post('nama_produk',TRUE),ENT_QUOTES));
 				$harga_produk = $this->input->post('harga_produk');
 				$harga_new = str_replace(".", "", $harga_produk);

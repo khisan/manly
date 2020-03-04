@@ -70,7 +70,6 @@ class Shop extends CI_Controller {
     $this->pagination->initialize($config);
     $data['page'] = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
 
-    //panggil function get_mahasiswa_list yang ada pada mmodel mahasiswa_model. 
     $home = $this->db->get('tb_home',1)->row();
     $data['favicon'] = $home->favicon;
     $data['logo_header'] = $home->logo_header;
