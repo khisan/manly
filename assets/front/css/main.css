@@ -40,6 +40,38 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 [ FONT ]*/
 
 @font-face {
+  font-family: Gotham-Book;
+  src: url('../fonts/gotham/Gotham-Book.otf'); 
+}
+
+@font-face {
+  font-family: Gotham-Light;
+  src: url('../fonts/gotham/Gotham-Light.otf'); 
+}
+
+@font-face {
+  font-family: Gotham-Medium;
+  src: url('../fonts/gotham/Gotham-Medium.otf'); 
+}
+
+@font-face {
+  font-family: Gotham-Thin;
+  src: url('../fonts/gotham/Gotham-Thin.otf'); 
+}
+
+@font-face {
+  font-family: Gotham-Ultra;
+  src: url('../fonts/gotham/Gotham-Ultra.otf'); 
+}
+
+/* Poppin Font */
+
+@font-face {
+  font-family: Poppins-Italic;
+  src: url('../fonts/Poppins/Poppins-Italic.ttf'); 
+}
+
+@font-face {
   font-family: Poppins-Regular;
   src: url('../fonts/Poppins/Poppins-Regular.ttf'); 
 }
@@ -366,7 +398,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 }
 
 .main-menu > li > a {
-  font-family: Poppins-Medium;
+  font-family: Gotham-Medium;
   font-size: 14px;
   color: #333;
   padding: 5px 0px;
