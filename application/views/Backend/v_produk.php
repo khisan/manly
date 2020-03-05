@@ -26,6 +26,14 @@
       <div class="row">
         <div class="col-md-12">
           <div class="card">
+            <div class="card-header">
+              <div class="d-flex align-items-center">
+                <h4 class="card-title">Tambah Data</h4>
+                  <a class="btn btn-dark btn-round ml-auto" href="<?php echo site_url('Backend/produk/add_new');?>"><i class="fa fa-plus"></i>
+                    Tambah Data
+                  </a>
+              </div>
+            </div>
             <div class="card-body">
               <!--DELETE RECORD MODAL-->
               <form action="<?php echo site_url('Backend/Produk/delete'); ?>" method="post">
