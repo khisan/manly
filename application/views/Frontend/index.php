@@ -38,29 +38,19 @@
   <!--===============================================================================================-->
 
   <style>
-    .pagination li a {
-      background-color: white;
+    .page-link a{
       color: #000;
     }
 
-    .pagination li a:focus,
-    .pagination li a:hover,
-    .pagination li span:focus,
-    .pagination li span:hover {
-      color: #5a5a5a;
-      background-color: #000;
-      border-color: #fff;
+    .page-link a:hover{
+      color: #fff;
     }
 
-    .pagination .active a {
-      color: white;
-      background-color: #000;
-      border-color: #fff;
-    }
-
-    .pagination .active a:hover {
-      background-color: #000;
-      border-color: #fff;
+    .page-link:hover{
+      color: #fff;
+      text-decoration: none;
+      background-color: gray;
+      border-color: #ddd;
     }
 
     .page-item.active .page-link {
