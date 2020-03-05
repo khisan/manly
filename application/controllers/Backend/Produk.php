@@ -50,7 +50,7 @@ class Produk extends CI_Controller{
         $foto_produk=$img['file_name'];
 				$nama_produk = strip_tags(htmlspecialchars($this->input->post('nama_produk',TRUE),ENT_QUOTES));
 				$harga_produk = $this->input->post('harga_produk');
-				$harga_new = str_replace(",", "", $harga_produk);
+				$harga_new = str_replace(".", "", $harga_produk);
 				$deskripsi_produk = $this->input->post('deskripsi_produk');
 				$stok_produk = strip_tags(htmlspecialchars($this->input->post('stok_produk',TRUE),ENT_QUOTES));
 

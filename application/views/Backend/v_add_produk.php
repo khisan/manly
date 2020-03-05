@@ -39,7 +39,7 @@
                     </div>
                     <div class="form-group">
                       <label for="email2">Harga Produk</label>
-                      <input type="number" id="harga_produk" name="harga_produk" class="form-control" placeholder="Harga Produk" step="any">
+                      <input type="number" id="harga_produk" name="harga_produk" class="form-control" placeholder="Harga Produk">
                     </div>
                     <div class="form-group form-inline">
                       <label>Deskripsi Produk</label>
