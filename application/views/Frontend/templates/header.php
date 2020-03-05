@@ -4,15 +4,6 @@
 	<title>Home</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style type="text/css">
-	html *{
-		@font-face {
-      font-family: 'Gotham-Medium'; !important
-      src: url('<?php echo base_url().'/assets/font/Gotham-Medium.otf'?>');
-    }
-	}
-</style>
 <!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="<?php echo base_url().'/assets/images/theme/'.$favicon;?>"/>
 <!--===============================================================================================-->

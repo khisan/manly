@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" href="<?php echo base_url().'/assets/images/theme/'.$favicon;?>" />
   <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/front/vendor/bootstrap/css/bootstrap.min.css')?>">
+  <!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/front/css/coba.css')?>"> -->
   <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/front/fonts/font-awesome-4.7.0/css/font-awesome.min.css')?>">
   <!--===============================================================================================-->
@@ -35,6 +36,41 @@
   <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/front/css/util.css')?>">
   <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/front/css/main.css')?>">
   <!--===============================================================================================-->
+
+  <style>
+    .pagination li a {
+      background-color: white;
+      color: #000;
+    }
+
+    .pagination li a:focus,
+    .pagination li a:hover,
+    .pagination li span:focus,
+    .pagination li span:hover {
+      color: #5a5a5a;
+      background-color: #000;
+      border-color: #fff;
+    }
+
+    .pagination .active a {
+      color: white;
+      background-color: #000;
+      border-color: #fff;
+    }
+
+    .pagination .active a:hover {
+      background-color: #000;
+      border-color: #fff;
+    }
+
+    .page-item.active .page-link {
+      z-index: 2;
+      color: #fff;
+      background-color: #000;
+      border-color: #fff;
+    }
+  </style>
+
 </head>
 
 <body class="animsition">
@@ -245,13 +281,11 @@
             </div>
           </div>
         </div>
-      <?php endforeach; ?>
+        <?php endforeach; ?>
       </div>
 
-      <div class="row">
-        <div class="col">
-          <?php echo $pagination; ?>
-        </div>
-      </div>
+      <!-- <div class="pagging"> -->
+      <?php echo $pagination; ?>
+      <!-- </div> -->
     </div>
   </section>

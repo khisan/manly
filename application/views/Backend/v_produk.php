@@ -62,6 +62,7 @@
                     <tr>
                       <th>No</th>
                       <th>Nama</th>
+                      <th>Tanggal Publish</th>
                       <th>Harga</th>
                       <th>Stok</th>
                       <th>Foto</th>
@@ -72,6 +73,7 @@
                     <tr>
                       <th>No</th>
                       <th>Nama</th>
+                      <th>Tanggal Publish</th>
                       <th>Harga</th>
                       <th>Stok</th>
                       <th>Foto</th>
@@ -87,6 +89,7 @@
                       <tr>
                         <td><?php echo $no; ?></td>
                         <td><?php echo $row->nama_produk; ?></td>
+                        <td><?php echo $row->waktu_post; ?></td>
                         <td>
                           <?php $angka = $row->harga_produk;
                           echo 'Rp. ' . number_format($angka, 0, '', '.');

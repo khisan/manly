@@ -3,7 +3,7 @@ class M_produk extends CI_Model{
 
 	//BACKEND
 	function get_all_produk(){
-		$result = $this->db->query("SELECT * FROM tb_produk");
+		$result = $this->db->query("SELECT id_produk,DATE_FORMAT(tanggal_post,'%d %M %Y') AS waktu_post,nama_produk,harga_produk,deskripsi_produk,stok_produk,harga_produk,foto_produk FROM tb_produk ORDER BY tanggal_post DESC");
 		return $result;
 	}
 
@@ -13,7 +13,11 @@ class M_produk extends CI_Model{
   }
 
 	function get_produk_list($limit, $start){
-    $query = $this->db->get('tb_produk', $limit, $start);
+		$this->db->select ('*'); 
+    $this->db->from ('tb_produk');
+    $this->db->order_by('tanggal_post', 'DESC');
+    $this->db->limit($limit, $start);
+    $query = $this->db->get();
     return $query;
   }
 
