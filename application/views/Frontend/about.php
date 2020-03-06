@@ -184,7 +184,7 @@
           </h3>
 
           <p class="stext-113 cl6 p-b-26">
-            <?php echo $isi_deskripsi_1; ?>
+            <?php echo $isi_deskripsi_2; ?>
           </p>
         </div>
       </div>
