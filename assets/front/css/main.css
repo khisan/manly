@@ -2170,7 +2170,7 @@ input.num-product::-webkit-inner-spin-button {
 /*//////////////////////////////////////////////////////////////////
 [ S-Text 0 - 15 ]*/
 .stext-101 {
-  font-family: Poppins-Medium;
+  font-family: Gotham-Medium;
   font-size: 15px;
   line-height: 1.466667;
   text-transform: uppercase;
@@ -2263,7 +2263,7 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 .stext-116 {
-  font-family: Poppins-Regular;
+  font-family: Gotham-Medium;
   font-size: 15px;
   line-height: 1.266667;
 }
@@ -2349,7 +2349,7 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 .mtext-111 {
-  font-family: Poppins-Bold;
+  font-family: Gotham-Medium;
   font-size: 25px;
   line-height: 1.2;
 }
