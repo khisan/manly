@@ -1643,7 +1643,7 @@ button.mfp-close {
 }
 
 .tab01 .nav-link {
-  font-family: Poppins-Regular;
+  font-family: Gotham-Medium;
   font-size: 15px;
   color: #888;
   line-height: 1.2;
@@ -2177,7 +2177,7 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 .stext-102 {
-  font-family: Poppins-Regular;
+  font-family: Gotham-Medium;
   font-size: 14px;
   line-height: 1.7;
 }
@@ -2269,7 +2269,7 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 .stext-117 {
-  font-family: Poppins-Light;
+  font-family: Gotham-Medium;
   font-size: 15px;
   line-height: 1.666667;
 }
@@ -2312,7 +2312,7 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 .mtext-105 {
-  font-family: Poppins-Regular;
+  font-family: Gotham-Medium;
   font-size: 24px;
   line-height: 1.5;
 }
@@ -2383,7 +2383,7 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 .ltext-103 {
-  font-family: Poppins-Bold;
+  font-family: Gotham-Medium;
   font-size: 36px;
   line-height: 1.1;
   text-transform: uppercase;
@@ -2397,13 +2397,13 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 .ltext-105 {
-  font-family: Poppins-Bold;
+  font-family: Gotham-Medium;
   font-size: 50px;
   line-height: 1.1;
 }
 
 .ltext-106 {
-  font-family: Poppins-Bold;
+  font-family: Gotham-Medium;
   font-size: 36px;
   line-height: 1.2;
 }
@@ -2429,7 +2429,7 @@ input.num-product::-webkit-inner-spin-button {
 
 /*---------------------------------------------*/
 .ltext-201 {
-  font-family: PlayfairDisplay-Bold;
+  font-family: Gotham-Medium;
   font-size: 60px;
   line-height: 1.1;
   text-transform: uppercase;
@@ -2940,6 +2940,7 @@ input.num-product::-webkit-inner-spin-button {
 .how-pos2 {
   padding-left: 10.7%;
   padding-right: 11%;
+  word-wrap: break-word;
 }
 
 @media (max-width: 991px) {
