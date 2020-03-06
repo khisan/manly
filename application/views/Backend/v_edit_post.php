@@ -114,7 +114,13 @@
 
         onImageUpload: function(files, editor, welEditable) {
           sendFile(files[0], editor, welEditable);
-        }
+        },
+
+        onPaste: function (e) {
+        var bufferText = ((e.originalEvent || e).clipboardData || window.clipboardData).getData('Text');
+        e.preventDefault();
+        document.execCommand('insertText', false, bufferText);
+        } 
 
       });
 
