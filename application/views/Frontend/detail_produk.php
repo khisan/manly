@@ -217,6 +217,23 @@
                 </div>
               </div>
             </div>
+
+            <div class="flex-w p-b-10">
+              <div class="respon6" style="margin-top:30px">
+               <span class="mtext-106 cl2"> 
+                  <a href="https://shopee.co.id/" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+                    <img src="<?php echo base_url().'/assets/images/icon/shopee.ico'?>"></img>
+                  </a>
+                  <a href="https://www.bukalapak.com/" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+                    <img src="<?php echo base_url().'/assets/images/icon/bukalapak.ico'?>"></img>
+                  </a>
+                  <a href="https://www.zalora.co.id/" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+                    <img src="<?php echo base_url().'/assets/images/icon/zalora.ico'?>"></img>
+                  </a>
+               </span>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
