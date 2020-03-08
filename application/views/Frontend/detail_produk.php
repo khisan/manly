@@ -220,15 +220,33 @@
 
             <div class="flex-w p-b-10">
               <div class="respon6" style="margin-top:30px">
-               <span class="mtext-106 cl2"> 
+               <span class="mtext-106 cl2"> Our Marketplace : <br>
                   <a href="https://shopee.co.id/" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
-                    <img src="<?php echo base_url().'/assets/images/icon/shopee.ico'?>"></img>
+                    <img src="<?php echo base_url().'/assets/images/icon/shopee.ico'?>" alt="Shopee" title="Shopee"></img>
                   </a>
-                  <a href="https://www.bukalapak.com/" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
-                    <img src="<?php echo base_url().'/assets/images/icon/bukalapak.ico'?>"></img>
+                  <a href="https://www.lazada.co.id/" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+                    <img src="<?php echo base_url().'/assets/images/icon/lazada.ico'?>" alt="Lazada" title="Lazada"></img>
                   </a>
                   <a href="https://www.zalora.co.id/" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
-                    <img src="<?php echo base_url().'/assets/images/icon/zalora.ico'?>"></img>
+                    <img src="<?php echo base_url().'/assets/images/icon/zalora.ico'?>" alt="Zalora" title="Zalora"></img>
+                  </a>
+                  <a href="https://www.tokopedia.com/" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+                    <img src="<?php echo base_url().'/assets/images/icon/tokopedia.ico'?>" alt="Tokopedia" title="Tokopedia"></img>
+                  </a>
+                  <a href="https://www.blibli.com/" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+                    <img src="<?php echo base_url().'/assets/images/icon/blibli.ico'?>" alt="BliBli" title="BliBli"></img>
+                  </a>
+                  <a href="https://zilingoshopping.id/" class="fs-18 cl7 hov-cl1 trans-04 m-r-16" style="margin-left: 40px;">
+                    <img src="<?php echo base_url().'/assets/images/icon/zilingo.ico'?>" alt="Zilingo" title="Zilingo"></img>
+                  </a>
+                  <a href="https://thefthing.com/" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+                    <img src="<?php echo base_url().'/assets/images/icon/thefthing.ico'?>" alt="The F Thing" title="The F Thing"></img>
+                  </a>
+                  <a href="https://www.blanja.com/" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+                    <img src="<?php echo base_url().'/assets/images/icon/blanja.ico'?>" alt="Blanja" title="Blanja"></img>
+                  </a>
+                  <a href="https://www.bukalapak.com/" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+                    <img src="<?php echo base_url().'/assets/images/icon/bukalapak.ico'?>" alt="BukaLapak" title="BukaLapak"></img>
                   </a>
                </span>
               </div>
