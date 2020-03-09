@@ -87,7 +87,7 @@
               </li>
 
               <li>
-                <a href="<?php echo base_url('blog')?>">Blog</a>
+                <a href="<?php echo base_url('shop')?>">Product</a>
               </li>
 
               <li>
