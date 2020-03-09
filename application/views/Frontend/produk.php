@@ -58,6 +58,7 @@
       background-color: #000;
       border-color: #fff;
     }
+
   </style>
 
 </head>
@@ -173,33 +174,39 @@
       </div>
 
       <div class="row isotope-grid">
-        <?php foreach ($data->result() as $row):?>
-        <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item">
-          <!-- Block2 -->
-          <div class="block2">
-            <div class="block2-pic hov-img0">
-              <img src="<?php echo base_url().'assets/images/produk/'.$row->foto_produk;?>" alt="IMG-PRODUCT">
+        <?php $counter=0; foreach ($data->result() as $row):?>
+          <?php $counter++; ?>
+            <!-- <?php if ($counter === 5) { ?>
+              <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item" style="margin-left: 25%">
+            <?php }else{ ?>
+              <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item">
+            <?php } ?> -->
+              <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item">
+                <!-- Block2 -->
+                <div class="block2">
+                  <div class="block2-pic hov-img0">
+                    <img src="<?php echo base_url('assets/images/produk/'.$row->foto_produk)?>" alt="IMG-PRODUCT">
 
-              <a href="<?php echo site_url('Shop/detail/'.$row->id_produk);?>" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04" >
-                Detail
-              </a>
-            </div>
+                    <a href="<?php echo site_url('Shop/detail/'.$row->id_produk);?>" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04" >
+                      Detail
+                    </a>
+                  </div>
 
-            <div class="block2-txt flex-w flex-t p-t-14">
-              <div class="block2-txt-child1 flex-col-l ">
-                <a href="<?php echo site_url('Shop/detail/'.$row->id_produk);?>" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-                  <?php echo $row->nama_produk;?>
-                </a>
+                  <div class="block2-txt flex-w flex-t p-t-14">
+                    <div class="block2-txt-child1 flex-col-l ">
+                      <a href="<?php echo site_url('Shop/detail/'.$row->id_produk);?>" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+                        <?php echo $row->nama_produk;?>
+                      </a>
 
-                <span class="stext-105 cl3">
-                  <?php $angka = $row->harga_produk; 
-                    echo 'Rp. '. number_format($angka, 0, '', '.');
-                  ?>
-                </span>
+                      <span class="stext-105 cl3">
+                        <?php $angka = $row->harga_produk; 
+                          echo 'Rp. '. number_format($angka, 0, '', '.');
+                        ?>
+                      </span>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
         <?php endforeach;?>
       </div>
 

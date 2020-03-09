@@ -42,7 +42,7 @@ class Shop extends CI_Controller {
     //konfigurasi pagination
     $config['base_url'] = site_url('shop/index'); //site url
     $config['total_rows'] = $this->db->count_all('tb_produk'); //total row
-    $config['per_page'] = 4;  //show record per halaman
+    $config['per_page'] = 8;  //show record per halaman
     $config["uri_segment"] = 3;  // uri parameter
     $choice = $config["total_rows"] / $config["per_page"];
     $config["num_links"] = floor($choice);
