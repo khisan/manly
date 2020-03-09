@@ -145,8 +145,7 @@
   </header>
 
 <!-- Title page -->
-<section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('<?php echo base_url('assets/images/bg-02.jpg')?>');">
-  <h2 class="ltext-105 cl0 txt-center">
+<section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('<?php echo base_url().'/assets/images/header_blog/'.$gambar_header;?>');">  <h2 class="ltext-105 cl0 txt-center">
     Blog
   </h2>
 </section>

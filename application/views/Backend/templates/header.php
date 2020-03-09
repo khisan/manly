@@ -191,6 +191,11 @@
 										</a>
 									</li>
 									<li>
+										<a href="<?php echo site_url('Backend/blog_setting');?>">
+											<span class="sub-item">Blog</span>
+										</a>
+									</li>
+									<li>
 										<a href="<?php echo site_url('Backend/about_setting');?>">
 											<span class="sub-item">About</span>
 										</a>

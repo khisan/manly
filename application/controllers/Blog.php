@@ -116,6 +116,8 @@ class Blog extends CI_Controller {
     $data['alamat'] = $kontak->alamat;
     $data['no_hp'] = $kontak->no_hp;
     $data['email'] = $kontak->email;
+    $kontak = $this->db->get('tb_blog', 1)->row();
+    $data['gambar_header'] = $kontak->gambar_header;
   	$this->load->view('Frontend/blog.php',$data);
   	$this->load->view('Frontend/templates/footer.php');
 	}
