@@ -1,8 +1,8 @@
 <!-- Footer -->
 <footer class="bg3 p-t-75 p-b-32">
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 col-lg-3 p-b-50" style="margin-left:150px">
+			<div class="row justify-content-center">
+				<div class="col-xs-3 col-sm-3 col-lg-3 p-b-50">
 					<h4 class="stext-301 cl0 p-b-30">
 						Email
           </h4>
@@ -16,7 +16,7 @@
           </ul>
 				</div>
 
-				<div class="col-sm-6 col-lg-3 p-b-50">
+				<div class="col-xs-3 col-sm-3 col-lg-3 p-b-50">
 					<h4 class="stext-301 cl0 p-b-30">
 						Address
 					</h4>
@@ -26,7 +26,7 @@
 					</p>
 				</div>
         
-        <div class="col-sm-6 col-lg-3 p-b-50" style="margin-left:80px">
+        <div class="col-xs-3 col-sm-3 col-lg-3 p-b-50">
           <h4 class="stext-301 cl0 p-b-30">
             Contact Us
           </h4>
