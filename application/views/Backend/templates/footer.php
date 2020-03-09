@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="container-fluid">
     <div class="copyright ml-auto">
-      2020, made with <i class="fa fa-heart heart text-danger"></i> by <a href="#">Admin</a>
+      2020, made by <a href="#" style="color: #575962">Manly</a>
     </div>
   </div>
 </footer>
