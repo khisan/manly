@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>Manly</title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-	<link rel="icon" href="<?php echo base_url('assets/back/img/icon.ico')?>" type="image/x-icon" />
+	<link rel="icon" href="<?php echo base_url('assets/images/theme/logo_huruf_m.png')?>" type="image/x-icon" />
 
 	<!-- Fonts and icons -->
 	<script src="<?php echo base_url('assets/back/js/plugin/webfont/webfont.min.js')?>"></script>
