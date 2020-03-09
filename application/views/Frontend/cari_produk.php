@@ -34,6 +34,31 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/front/css/util.css')?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/front/css/main.css')?>">
 <!--===============================================================================================-->
+
+	<style>
+    .page-link a{
+      color: #000;
+    }
+
+    .page-link a:hover{
+      color: #fff;
+    }
+
+    .page-link:hover{
+      color: #fff;
+      text-decoration: none;
+      background-color: gray;
+      border-color: #ddd;
+    }
+
+    .page-item.active .page-link {
+      z-index: 2;
+      color: #fff;
+      background-color: #000;
+      border-color: #fff;
+    }
+  </style>
+
 </head>
 <body class="animsition">
 <!-- Header -->
