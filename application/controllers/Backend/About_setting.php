@@ -29,9 +29,9 @@ class About_setting extends CI_Controller{
 	function update(){
 		$id_about = htmlspecialchars($this->input->post('id_about',TRUE),ENT_QUOTES);
 		$judul_deskripsi_1 = $this->input->post('judul_deskripsi_1',TRUE);
-		$isi_deskripsi_1 = $this->input->post('isi_deskripsi_1',TRUE);
+		$isi_deskripsi_1 = $this->input->post('isi_deskripsi_1');
 		$judul_deskripsi_2 = $this->input->post('judul_deskripsi_2',TRUE);
-		$isi_deskripsi_2 = $this->input->post('isi_deskripsi_2',TRUE);
+		$isi_deskripsi_2 = $this->input->post('isi_deskripsi_2');
 		
 		$config['upload_path'] = './assets/images/about/';
     $config['allowed_types'] = 'gif|jpg|png|jpeg|bmp';

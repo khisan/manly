@@ -131,11 +131,11 @@
     <div class="row p-b-148">
       <div class="col-md-7 col-lg-8">
         <div class="p-t-7 p-r-85 p-r-15-lg p-r-0-md">
-          <h3 class="mtext-111 cl2 p-b-16">
+          <h3 class="mtext-111 cl2 p-b-16" style="text-align: center;">
             <?php echo $judul_deskripsi_1; ?>
           </h3>
 
-          <p class="stext-113 cl6 p-b-26">
+          <p class="stext-113 cl6 p-b-26" style="text-align: justify;">
             <?php echo $isi_deskripsi_1; ?>
           </p>
         </div>
