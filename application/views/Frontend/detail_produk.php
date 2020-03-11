@@ -145,7 +145,7 @@
   <section class="sec-product-detail bg0 p-t-65 p-b-60">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-lg-7 p-b-30">
+        <div class="col-md-6 col-lg-5 p-b-30">
           <div class="p-l-25 p-r-30 p-lr-0-lg">
             <div class="wrap-slick3 flex-sb flex-w">
               <div class="slick3 gallery-lb">
@@ -163,7 +163,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-5 p-b-30">
+        <div class="col-md-6 col-lg-7 p-b-30">
           <div class="p-r-50 p-t-5 p-lr-0-lg">
             <h4 class="mtext-105 cl2 js-name-detail p-b-14">
               <?php echo $produk->nama_produk ?>
@@ -210,7 +210,7 @@
                   <a href="https://www.blibli.com/" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
                     <img src="<?php echo base_url().'/assets/images/icon/blibli.ico'?>" alt="BliBli" title="BliBli"></img>
                   </a>
-                  <a href="https://zilingoshopping.id/" class="fs-18 cl7 hov-cl1 trans-04 m-r-16" style="margin-left: 40px;">
+                  <a href="https://zilingoshopping.id/" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
                     <img src="<?php echo base_url().'/assets/images/icon/zilingo.ico'?>" alt="Zilingo" title="Zilingo"></img>
                   </a>
                   <a href="https://thefthing.com/" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
