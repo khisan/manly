@@ -3,7 +3,7 @@ class M_post extends CI_Model{
 
 	//BACKEND
 	function get_all_post(){
-		$result = $this->db->query("SELECT id_post,judul_post,gambar_post,DATE_FORMAT(tanggal_post,'%d %M %Y') AS tanggal_post,nama_kategori,nama_tag,post_status FROM tb_post JOIN tb_kategori ON id_kategori_post=id_kategori JOIN tb_tags ON id_tags_post=id_tag ORDER BY tanggal_post ASC");
+		$result = $this->db->query("SELECT id_post,judul_post,gambar_post,DATE_FORMAT(tanggal_post,'%d %M %Y') AS tanggal_post,nama_kategori,nama_tag,post_status FROM tb_post JOIN tb_kategori ON id_kategori_post=id_kategori JOIN tb_tags ON id_tags_post=id_tag ORDER BY tanggal_post DESC");
 		return $result;
 	}
 
