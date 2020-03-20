@@ -12,9 +12,9 @@
 <!--   Core JS Files   -->
 <script src="<?php echo base_url('assets/back/js/core/jquery.3.2.1.min.js')?>"></script>
 <script src="<?php echo base_url('assets/front/js/jquery.mask.min.js')?>"></script>
-<script src="<?php echo base_url('assets/back/summernote/dist/summernote-bs4.js')?>"></script>
 <script src="<?php echo base_url('assets/back/js/core/popper.min.js')?>"></script>
 <script src="<?php echo base_url('assets/back/js/core/bootstrap.min.js')?>"></script>
+<script src="<?php echo base_url('assets/back/summernote/summernote.min.js') ?>"></script>
 
 <!--   Other JS Files   -->
 <script src="<?php echo base_url('assets/back/dropify/js/dropify.min.js')?>"></script>
@@ -52,24 +52,6 @@
 <!-- Atlantis JS -->
 <script src="<?php echo base_url('assets/back/js/atlantis.min.js')?>"></script>
 <script>
-  $('#summernote').summernote({
-    height: 590,
-    toolbar: [    
-          ['style', ['style']],
-          ['font', ['bold', 'italic', 'underline', 'clear']],
-          ['fontsize', ['fontsize']],
-          ['color', ['color']],
-          ['para', ['ul', 'ol', 'paragraph']],       
-          ['insert', ['link', 'picture', 'hr']],
-          ['view', ["fullscreen", "codeview", "help"]],
-        ],
-
-      onImageUpload: function(files, editor, welEditable) {
-          sendFile(files[0], editor, welEditable);
-      } 
-
-  });
-
   $(document).ready(function(){
     $('.dropify').dropify({
         messages: {
@@ -82,6 +64,7 @@
     // Format mata uang.
     $( '.harga_produk' ).mask('000,000,000', {reverse: true});
   });
+
 
 </script>
 

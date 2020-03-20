@@ -29,7 +29,7 @@
 	<!-- CSS Files -->
 	<link rel="stylesheet" href="<?php echo base_url('assets/back/css/bootstrap.min.css')?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/back/css/atlantis.css')?>">
-	<link rel="stylesheet" href="<?php echo base_url('assets/back/summernote/dist/summernote-bs4.css')?>">
+	<link rel="stylesheet" href="<?php echo base_url('assets/back/summernote/summernote.css')?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/back/dropify/css/dropify.min.css')?>">
 
 	<!-- CSS Just for demo purpose, don't include it in your project -->

@@ -38,9 +38,9 @@
                       <label for="email2">Judul</label>
                       <input type="text" name="judul" class="form-control judul" value="<?php echo $b['judul_post']; ?>" placeholder="Judul">
                     </div>
-                    <div class="form-group form-inline">
+                    <div class="form-group">
                       <label>Konten</label>
-                      <textarea name="konten" id="summernote">
+                      <textarea name="konten" id='summernote'>
                         <?php echo $b['konten_post'] ?>
                       </textarea>
                     </div>
@@ -97,48 +97,20 @@
     </div>
   </div>
   <script src="<?php echo base_url('assets/back/js/core/jquery.3.2.1.min.js') ?>"></script>
-  <script src="<?php echo base_url('assets/back/summernote/dist/summernote-bs4.js') ?>"></script>
   <script>
     $(document).ready(function() {
-      $('#summernote').summernote({
-        height: 590,
-        toolbar: [
-          ['style', ['style']],
-          ['font', ['bold', 'italic', 'underline', 'clear']],
-          ['fontsize', ['fontsize']],
-          ['color', ['color']],
-          ['para', ['ul', 'ol', 'paragraph']],
-          ['insert', ['link', 'picture', 'hr']],
-          ['view', ["fullscreen", "codeview", "help"]],
-        ],
-
-        onImageUpload: function(files, editor, welEditable) {
-          sendFile(files[0], editor, welEditable);
-        },
-
-        onPaste: function (e) {
-        var bufferText = ((e.originalEvent || e).clipboardData || window.clipboardData).getData('Text');
-        e.preventDefault();
-        document.execCommand('insertText', false, bufferText);
-        } 
-
-      });
-
-      function sendFile(file, editor, welEditable) {
-        data = new FormData();
-        data.append("file", file);
-        $.ajax({
-          data: data,
-          type: "POST",
-          url: "<?php echo site_url() ?>backend/post/upload_image",
-          cache: false,
-          contentType: false,
-          processData: false,
-          success: function(url) {
-            editor.insertImage(welEditable, url);
-          }
-        });
-      }
+    $('#summernote').summernote({
+      height: 590,
+  toolbar: [
+    // [groupName, [list of button]]
+    ['style', ['bold', 'italic', 'underline', 'clear']],
+    ['font', ['strikethrough', 'superscript', 'subscript']],
+    ['fontsize', ['fontsize']],
+    ['color', ['color']],
+    ['para', ['ul', 'ol', 'paragraph']],
+    ['height', ['height']]
+  ]
+});
 
       $('.dropify').dropify({
         messages: {
@@ -148,11 +120,5 @@
           error: 'error'
         }
       });
-
-      $('.judul').keyup(function() {
-        var title = $(this).val().toLowerCase().replace(/[&\/\\#^, +()$~%.'":*?<>{}]/g, '-');
-        $('.slug').val(title);
-      });
-
     });
   </script>
