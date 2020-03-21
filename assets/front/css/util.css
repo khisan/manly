@@ -10,13 +10,8 @@
 	box-sizing: border-box;
 }
 
-body, html, div{
-	@font-face
-	{
-    font-family:'Gotham-Medium';
-    src:url('<?php echo base_url('assets/Gotham-Medium.otf')?>');
-	}
-	font-family: "Gotham-Medium" !important;
+body, html {
+	font-family: Arial, sans-serif;
 	font-size: 15px;
 	color: #666666;
 
@@ -32,10 +27,7 @@ a:focus {outline: none;}
 a:hover {text-decoration: none;}
 
 /*---------------------------------------------*/
-h1,h2,h3,h4,h5,h6,p,span {
-	margin: 0px;
-	font-family: "Gotham-Medium";
-}
+h1,h2,h3,h4,h5,h6,p {margin: 0px;}
 
 ul, li {
 	margin: 0px;

@@ -193,8 +193,8 @@
 
                 <p class="stext-117 cl6">
                   <?php 
-                    $konten = $row->konten_post;
-                    echo word_limiter($konten,50);
+                    echo $konten = word_limiter($row->konten_post,50);
+                    //echo $row->konten_post;
                   ?>
                 </p>
 
@@ -209,6 +209,7 @@
                       Category : <?php echo $row->nama_kategori;?>
                       <span class="cl12 m-l-4 m-r-6">|</span>
                     </span>
+
                     <span>
                       Tag : <?php echo $row->nama_tag;?>
                       <span class="cl12 m-l-4 m-r-6">|</span>
@@ -217,6 +218,7 @@
 
                   <a href="<?php echo site_url('Blog/detail/'.$row->id_post);?>" class="stext-101 cl2 hov-cl1 trans-04 m-tb-10">
                     Continue Reading
+
                     <i class="fa fa-long-arrow-right m-l-9"></i>
                   </a>
                 </div>
@@ -231,6 +233,7 @@
             </div>
           </div>
         </div>
+        
         <div class="col-md-4 col-lg-3 p-b-80">
           <div class="side-menu">
             <div class="bor17 of-hidden pos-relative">
