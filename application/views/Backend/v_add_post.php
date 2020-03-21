@@ -37,7 +37,7 @@
                       <label for="email2">Judul</label>
                       <input type="text" name="judul" class="form-control judul" placeholder="Judul">
                     </div>
-                    <div class="form-group form-inline">
+                    <div class="form-group">
                       <label>Konten</label>
                       <textarea name="konten" id="summernote"></textarea>
                     </div>
@@ -89,23 +89,24 @@
   $(document).ready(function(){
     $('#summernote').summernote({
       height: 590,
+      fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Gotham-Medium'],
+      fontNamesIgnoreCheck: ['Gotham-Medium'],
       toolbar: [
         // [groupName, [list of button]]
         ['style', ['bold', 'italic', 'underline', 'clear']],
         ['font', ['strikethrough', 'superscript', 'subscript']],
         ['fontsize', ['fontsize']],
+        ['fontname', ['fontname']],
         ['color', ['color']],
         ['para', ['ul', 'ol', 'paragraph']],
-        ['height', ['height']],
-        ['insert', ['link', 'picture', 'video']],
+        ['height', ['height']]
       ],
-
+  
       onPaste: function (e) {
-      var bufferText = ((e.originalEvent || e).clipboardData || window.clipboardData).getData('Text');
-      e.preventDefault();
-      document.execCommand('insertText', false, bufferText);
+        var bufferText = ((e.originalEvent || e).clipboardData || window.clipboardData).getData('Text');
+        e.preventDefault();
+        document.execCommand('insertText', false, bufferText);
       } 
-
     });
 
     $('.dropify').dropify({

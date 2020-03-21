@@ -84,41 +84,25 @@
 
     $('#summernote').summernote({
       height: 590,
-      toolbar: [    
-            ['style', ['style']],
-            ['font', ['bold', 'italic', 'underline', 'clear']],
-            ['fontsize', ['fontsize']],
-            ['color', ['color']],
-            ['para', ['ul', 'ol', 'paragraph']],       
-            ['insert', ['link', 'picture', 'hr']],
-            ['view', ["fullscreen", "codeview", "help"]],
-          ],
-
-        onImageUpload: function(files, editor, welEditable) {
-            sendFile(files[0], editor, welEditable);
-        },
-        onPaste: function (e) {
+      fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Gotham-Medium'],
+      fontNamesIgnoreCheck: ['Gotham-Medium'],
+      toolbar: [
+        // [groupName, [list of button]]
+        ['style', ['bold', 'italic', 'underline', 'clear']],
+        ['font', ['strikethrough', 'superscript', 'subscript']],
+        ['fontsize', ['fontsize']],
+        ['fontname', ['fontname']],
+        ['color', ['color']],
+        ['para', ['ul', 'ol', 'paragraph']],
+        ['height', ['height']]
+      ],
+  
+      onPaste: function (e) {
         var bufferText = ((e.originalEvent || e).clipboardData || window.clipboardData).getData('Text');
         e.preventDefault();
         document.execCommand('insertText', false, bufferText);
-        }
+      } 
     });
-
-    function sendFile(file, editor, welEditable) {
-        data = new FormData();
-        data.append("file", file);
-        $.ajax({
-            data: data,
-            type: "POST",
-            url: "<?php echo site_url()?>backend/produk/upload_image",
-            cache: false,
-            contentType: false,
-            processData: false,
-            success: function(url) {
-                editor.insertImage(welEditable, url);
-            }
-        });
-    } 
 
     $('.dropify').dropify({
         messages: {
