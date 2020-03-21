@@ -10,12 +10,13 @@
 	box-sizing: border-box;
 }
 
-body, html {
+body, html, div{
 	@font-face
 	{
     font-family:'Gotham-Medium';
     src:url('<?php echo base_url('assets/Gotham-Medium.otf')?>');
 	}
+	font-family: "Gotham-Medium" !important;
 	font-size: 15px;
 	color: #666666;
 
