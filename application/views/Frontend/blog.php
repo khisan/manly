@@ -191,10 +191,9 @@
                   </a>
                 </h4>
 
-                <p class="stext-117 cl6">
+                <p class="stext-117 cl6" style="text-align: justify;">
                   <?php 
-                    echo $konten = word_limiter($row->konten_post,50);
-                    //echo $row->konten_post;
+                    echo $konten = word_limiter(strip_tags($row->konten_post), 30);
                   ?>
                 </p>
 
@@ -227,13 +226,13 @@
             <?php endforeach; ?>
             <!-- Pagination -->
             <div class="row">
-              <div class="col-md-12" style="margin-top: 80px">
+              <div class="col-md-12">
                 <?php echo $pagination; ?>
               </div>
             </div>
           </div>
         </div>
-        
+
         <div class="col-md-4 col-lg-3 p-b-80">
           <div class="side-menu">
             <div class="bor17 of-hidden pos-relative">
