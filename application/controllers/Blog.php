@@ -53,6 +53,7 @@ class Blog extends CI_Controller {
     $x['alamat'] = $kontak->alamat;
     $x['no_hp'] = $kontak->no_hp;
     $x['email'] = $kontak->email;
+    $x['gambar_header'] = $kontak->gambar_header;
 		$this->load->view('Frontend/kategori_blog',$x);
 		$this->load->view('Frontend/templates/footer');
 	}
