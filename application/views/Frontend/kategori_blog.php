@@ -217,7 +217,7 @@
                 </div>
               </div>
             </div>
-            <?php endforeach; ?>
+          <?php endforeach; ?>
           </div>
         </div>
         <div class="col-md-4 col-lg-3 p-b-80">
