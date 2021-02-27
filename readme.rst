@@ -15,6 +15,7 @@ Instalasi
 Untuk menggunakan aplikasi dapat dimulai dengan menyesuaikan konfigurasi di folder config.
 
 1. Pertama-tama siapkan databasenya bisa import db yang telah saya upload terletak di folder db.
+
 2. Buka folder config, kemudian edit file config.php seperti berikut ini:
 	* Rubah base_url -> ```http://localhost/nama-folder```
 	
