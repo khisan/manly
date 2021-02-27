@@ -15,7 +15,7 @@ Untuk menggunakan aplikasi dapat dimulai dengan menyesuaikan konfigurasi di fold
 3. Buka file database.php yang terdapat pada folder config, kemudian edit sesuai dengan di bawah ini :
 	* Masukkan host database ```'hostname' => ''```
     	* Masukkan username database ```'username' => ''``` 
-	* Masukkan password database ```'password' => ''``` 
+    	* Masukkan password database ```'password' => ''``` 
 	* Masukkan nama database ```'database_name' => ''``` 
 4. Jika sudah menyelesaikan semua tahapnya, aplikasi sudah siap digunakan.
 
