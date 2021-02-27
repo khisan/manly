@@ -1,4 +1,4 @@
-# Sistem Informasi Akademik Perguruan Tinggi
+# Company Profile Manly
 
 Projek ini merupakan company profile manly yang memiliki fungsionalitas sepert CMS tapi lebih simple. Dibangun menggunakan Codeigniter 3, Template(Frontend dan Backend), Bootsrap 3, Javascript, HTML, CSS
 
