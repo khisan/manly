@@ -17,6 +17,7 @@ Untuk menggunakan aplikasi dapat dimulai dengan menyesuaikan konfigurasi di fold
 	* Masukkan username database ```'username' => ''```
 	* Masukkan password database ```'password' => ''``` 
 	* Masukkan nama database ```'database_name' => ''``` 
-4. Jika sudah menyelesaikan semua tahapnya, aplikasi sudah siap digunakan.
+4. Username : ```admin``` & Password : ```1234``` untuk masuk halaman backend
+5. Jika sudah menyelesaikan semua tahapnya, aplikasi sudah siap digunakan.
 
 	
